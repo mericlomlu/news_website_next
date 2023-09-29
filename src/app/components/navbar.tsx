@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { MenuProps } from 'antd';
-import {Button, Menu} from 'antd';
+import {Menu} from 'antd';
 import {
     CustomerServiceTwoTone,
     ExperimentTwoTone,
@@ -9,7 +9,14 @@ import {
     MedicineBoxTwoTone, PushpinTwoTone, RocketTwoTone, TrophyTwoTone,
 
 } from "@ant-design/icons";
+import newspaper from "../assets/newspaper.svg";
+import Image from "next/image";
 const items: MenuProps['items'] = [
+    {
+        label: <Image src={newspaper} alt="Newspaper" width={32} height={32}/>,
+        key: "newspaper",
+        disabled: true
+    },
     {
         label: 'Home',
         key: 'home',
@@ -60,9 +67,11 @@ const Navbar = () => {
         setCurrent(e.key);
     };
     return(
-        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}  className="w-full flex justify-end items-center gap-4">
-            <Button></Button>
-        </Menu>
+       <div className="flex">
+           <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}  className="w-full flex items-center min-lg:gap-4 gap-2">
+
+           </Menu>
+       </div>
     );
 }
 export default Navbar;
