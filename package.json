@@ -13,7 +13,8 @@
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-feather": "^2.0.10"
   },
   "devDependencies": {
     "@types/node": "latest",
