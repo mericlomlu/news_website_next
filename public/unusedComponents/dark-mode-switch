@@ -1,0 +1,61 @@
+  <div className="toggle-switch">
+      <label className="toggle-label">
+        <input type="checkbox" className="toggle-input" />
+        <span
+          className="slider"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+        ></span>
+      </label>
+    </div>
+
+
+
+    .toggle-switch {
+      position: relative;
+      width: 50px;
+    }
+
+    .toggle-label {
+      position: absolute;
+      width: 100%;
+      height: 25px;
+      background-color: #0d1117;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .toggle-input {
+      position: absolute;
+      display: none;
+    }
+
+    .slider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .toggle-input:checked ~ .slider {
+      background-color: #0d1117;
+    }
+
+    .slider::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      box-shadow: inset 7px -1px #f8fafc;
+      background-color: #0d1117;
+      transition: 0.3s;
+    }
+
+    .toggle-input:checked ~ .slider::before {
+      transform: translateX(24px);
+      background-color: #fff314;
+      box-shadow: none;
+    }
