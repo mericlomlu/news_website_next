@@ -110,3 +110,52 @@ body {
 .zinc-default-gradient:disabled {
   @apply dark:text-zinc-100 dark:from-zinc-700 dark:to-zinc-900 from-zinc-100 to-zinc-300 text-zinc-700 bg-gradient-to-br;
 }
+
+
+.rose-default {
+  @apply dark:bg-rose-400 dark:text-rose-950 bg-rose-500 text-zinc-50;
+}
+
+.rose-default-outlined {
+  @apply dark:text-rose-300 dark:border-rose-300 text-rose-700 border-rose-700;
+}
+
+.rose-default-gradient {
+  @apply dark:text-rose-950 dark:from-rose-300 dark:to-rose-500 from-rose-400 to-rose-600 bg-gradient-to-br text-zinc-50;
+}
+
+.rose-default:hover {
+  @apply dark:bg-rose-300 dark:text-rose-950 bg-rose-600 text-zinc-50;
+}
+
+.rose-default-outlined:hover {
+  @apply dark:bg-rose-950 dark:text-rose-300 dark:border-rose-300 text-rose-700 border-rose-700 bg-rose-50;
+}
+
+.rose-default-gradient:hover {
+  @apply dark:text-rose-950 dark:from-rose-200 dark:to-rose-400 from-rose-500 to-rose-700 bg-gradient-to-br text-zinc-50;
+}
+
+.rose-default:active {
+  @apply dark:bg-rose-300 dark:text-rose-950 bg-rose-700 text-zinc-50;
+}
+
+.rose-default-outlined:active {
+  @apply dark:bg-rose-950 dark:text-rose-300 dark:border-rose-300 text-rose-700 border-rose-700 bg-rose-100;
+}
+
+.rose-default-gradient:active {
+  @apply dark:text-rose-950 dark:from-rose-400 dark:to-rose-600 from-rose-600 to-rose-800 bg-gradient-to-br text-zinc-50;
+}
+
+.rose-default:disabled {
+  @apply dark:bg-rose-800 dark:text-rose-100 bg-rose-200 text-rose-700;
+}
+
+.rose-default-outlined:disabled {
+  @apply dark:text-rose-300 dark:border-rose-300 text-rose-700 border-rose-700;
+}
+
+.rose-default-gradient:disabled {
+  @apply dark:text-rose-100 dark:from-rose-700 dark:to-rose-900 from-rose-100 to-rose-300 text-rose-700 bg-gradient-to-br;
+}

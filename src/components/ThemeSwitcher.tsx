@@ -18,7 +18,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className="zinc-default-gradient absolute right-5 top-2 w-fit rounded-md border-2 p-2 duration-200 hover:scale-100 active:scale-100"
+      className="rose-default-gradient absolute right-5 top-2 w-fit rounded-md border-2 p-2 duration-200 hover:scale-100 active:scale-100"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? <Sun /> : <Moon />}
