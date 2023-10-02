@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <nav className="bg-regentBlue-400 dark:bg-regentBlue-700 inline-flex h-16 w-screen items-end  gap-2 self-stretch px-4">
+    <nav className="inline-flex h-12 w-full items-end justify-between bg-regentBlue-400 px-4 dark:bg-regentBlue-700">
       <Image
         src={Newspaper}
         alt="Newspaper"
@@ -27,19 +27,19 @@ const Navbar = () => {
         height={40}
         className="self-center"
       />
-      <div className="flex w-[80%] flex-grow items-end justify-center">
+      <div className="flex">
         <Link
           href={"/home"}
           className={pathName === "/home" ? "nav-link-active" : "nav-link"}
         >
-          <Home />
+          <Home width={20} />
           <p className="hidden xl:flex"> Home Page</p>
         </Link>
         <Link
           href={"/business"}
           className={pathName === "/business" ? "nav-link-active" : "nav-link"}
         >
-          <BriefCase />
+          <BriefCase width={20} />
           <p className="hidden xl:flex"> Business News</p>
         </Link>
         <Link
@@ -48,35 +48,35 @@ const Navbar = () => {
             pathName === "/entertainment" ? "nav-link-active" : "nav-link"
           }
         >
-          <HeadPhones />
+          <HeadPhones width={20} />
           <p className="hidden xl:flex"> Entertainment News</p>
         </Link>
         <Link
           href={"/general"}
           className={pathName === "/general" ? "nav-link-active" : "nav-link"}
         >
-          <Tv />
+          <Tv width={20} />
           <p className="hidden xl:flex"> General News</p>
         </Link>
         <Link
           href={"/health"}
           className={pathName === "/health" ? "nav-link-active" : "nav-link"}
         >
-          <Activity />
+          <Activity width={20} />
           <p className="hidden xl:flex"> Health News</p>
         </Link>
         <Link
           href={"/science"}
           className={pathName === "/science" ? "nav-link-active" : "nav-link"}
         >
-          <Thermometer />
+          <Thermometer width={20} />
           <p className="hidden xl:flex"> Science News</p>
         </Link>
         <Link
           href={"/sports"}
           className={pathName === "/sports" ? "nav-link-active" : "nav-link"}
         >
-          <Dribbble />
+          <Dribbble width={20} />
           <p className="hidden xl:flex"> Sports News</p>
         </Link>
         <Link
@@ -85,7 +85,7 @@ const Navbar = () => {
             pathName === "/technology" ? "nav-link-active" : "nav-link"
           }
         >
-          <SmartPhone />
+          <SmartPhone width={20} />
           <p className="hidden xl:flex "> Technology News</p>
         </Link>
       </div>

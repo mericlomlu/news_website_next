@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dynamic-theme {
-  @apply m-auto flex flex-col items-center justify-center overflow-x-hidden border-zinc-900 bg-zinc-100 text-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100;
+  @apply m-auto overflow-x-hidden border-zinc-900 bg-zinc-100 text-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100;
 }
 
 .scarlet-default {
@@ -151,253 +151,253 @@
 }
 
 .blueLagoon-default {
-  @apply dark:bg-blueLagoon-400 dark:text-blueLagoon-950 bg-blueLagoon-500 text-zinc-50;
+  @apply bg-blueLagoon-500 text-zinc-50 dark:bg-blueLagoon-400 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default-outlined {
-  @apply dark:text-blueLagoon-300 dark:border-blueLagoon-300 text-blueLagoon-700 border-blueLagoon-700 rounded-md border-2;
+  @apply rounded-md border-2 border-blueLagoon-700 text-blueLagoon-700 dark:border-blueLagoon-300 dark:text-blueLagoon-300;
 }
 
 .blueLagoon-default-gradient {
-  @apply dark:text-blueLagoon-950 dark:from-blueLagoon-300 dark:to-blueLagoon-500 from-blueLagoon-400 to-blueLagoon-600 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-blueLagoon-400 to-blueLagoon-600 text-zinc-50 dark:from-blueLagoon-300 dark:to-blueLagoon-500 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default:hover {
-  @apply dark:bg-blueLagoon-300 dark:text-blueLagoon-950 bg-blueLagoon-600 text-zinc-50;
+  @apply bg-blueLagoon-600 text-zinc-50 dark:bg-blueLagoon-300 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default-outlined:hover {
-  @apply dark:bg-blueLagoon-950 dark:text-blueLagoon-300 dark:border-blueLagoon-300 text-blueLagoon-700 border-blueLagoon-700 bg-blueLagoon-50 rounded-md border-2;
+  @apply rounded-md border-2 border-blueLagoon-700 bg-blueLagoon-50 text-blueLagoon-700 dark:border-blueLagoon-300 dark:bg-blueLagoon-950 dark:text-blueLagoon-300;
 }
 
 .blueLagoon-default-gradient:hover {
-  @apply dark:text-blueLagoon-950 dark:from-blueLagoon-200 dark:to-blueLagoon-400 from-blueLagoon-500 to-blueLagoon-700 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-blueLagoon-500 to-blueLagoon-700 text-zinc-50 dark:from-blueLagoon-200 dark:to-blueLagoon-400 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default:active {
-  @apply dark:bg-blueLagoon-300 dark:text-blueLagoon-950 bg-blueLagoon-700 text-zinc-50;
+  @apply bg-blueLagoon-700 text-zinc-50 dark:bg-blueLagoon-300 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default-outlined:active {
-  @apply dark:bg-blueLagoon-950 dark:text-blueLagoon-300 dark:border-blueLagoon-300 text-blueLagoon-700 border-blueLagoon-700 bg-blueLagoon-100 rounded-md border-2;
+  @apply rounded-md border-2 border-blueLagoon-700 bg-blueLagoon-100 text-blueLagoon-700 dark:border-blueLagoon-300 dark:bg-blueLagoon-950 dark:text-blueLagoon-300;
 }
 
 .blueLagoon-default-gradient:active {
-  @apply dark:text-blueLagoon-950 dark:from-blueLagoon-400 dark:to-blueLagoon-600 from-blueLagoon-600 to-blueLagoon-800 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-blueLagoon-600 to-blueLagoon-800 text-zinc-50 dark:from-blueLagoon-400 dark:to-blueLagoon-600 dark:text-blueLagoon-950;
 }
 
 .blueLagoon-default:disabled {
-  @apply dark:bg-blueLagoon-800 dark:text-blueLagoon-100 bg-blueLagoon-200 text-blueLagoon-700;
+  @apply bg-blueLagoon-200 text-blueLagoon-700 dark:bg-blueLagoon-800 dark:text-blueLagoon-100;
 }
 
 .blueLagoon-default-outlined:disabled {
-  @apply dark:text-blueLagoon-300 dark:border-blueLagoon-300 text-blueLagoon-700 border-blueLagoon-700 rounded-md border-2;
+  @apply rounded-md border-2 border-blueLagoon-700 text-blueLagoon-700 dark:border-blueLagoon-300 dark:text-blueLagoon-300;
 }
 
 .blueLagoon-default-gradient:disabled {
-  @apply dark:text-blueLagoon-100 dark:from-blueLagoon-700 dark:to-blueLagoon-900 from-blueLagoon-100 to-blueLagoon-300 text-blueLagoon-700 bg-gradient-to-br;
+  @apply bg-gradient-to-br from-blueLagoon-100 to-blueLagoon-300 text-blueLagoon-700 dark:from-blueLagoon-700 dark:to-blueLagoon-900 dark:text-blueLagoon-100;
 }
 
 .pacificBlue-default {
-  @apply dark:bg-pacificBlue-400 dark:text-pacificBlue-950 bg-pacificBlue-500 text-zinc-50;
+  @apply bg-pacificBlue-500 text-zinc-50 dark:bg-pacificBlue-400 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default-outlined {
-  @apply dark:text-pacificBlue-300 dark:border-pacificBlue-300 text-pacificBlue-700 border-pacificBlue-700 rounded-md border-2;
+  @apply rounded-md border-2 border-pacificBlue-700 text-pacificBlue-700 dark:border-pacificBlue-300 dark:text-pacificBlue-300;
 }
 
 .pacificBlue-default-gradient {
-  @apply dark:text-pacificBlue-950 dark:from-pacificBlue-300 dark:to-pacificBlue-500 from-pacificBlue-400 to-pacificBlue-600 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-pacificBlue-400 to-pacificBlue-600 text-zinc-50 dark:from-pacificBlue-300 dark:to-pacificBlue-500 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default:hover {
-  @apply dark:bg-pacificBlue-300 dark:text-pacificBlue-950 bg-pacificBlue-600 text-zinc-50;
+  @apply bg-pacificBlue-600 text-zinc-50 dark:bg-pacificBlue-300 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default-outlined:hover {
-  @apply dark:bg-pacificBlue-950 dark:text-pacificBlue-300 dark:border-pacificBlue-300 text-pacificBlue-700 border-pacificBlue-700 bg-pacificBlue-50 rounded-md border-2;
+  @apply rounded-md border-2 border-pacificBlue-700 bg-pacificBlue-50 text-pacificBlue-700 dark:border-pacificBlue-300 dark:bg-pacificBlue-950 dark:text-pacificBlue-300;
 }
 
 .pacificBlue-default-gradient:hover {
-  @apply dark:text-pacificBlue-950 dark:from-pacificBlue-200 dark:to-pacificBlue-400 from-pacificBlue-500 to-pacificBlue-700 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-pacificBlue-500 to-pacificBlue-700 text-zinc-50 dark:from-pacificBlue-200 dark:to-pacificBlue-400 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default:active {
-  @apply dark:bg-pacificBlue-300 dark:text-pacificBlue-950 bg-pacificBlue-700 text-zinc-50;
+  @apply bg-pacificBlue-700 text-zinc-50 dark:bg-pacificBlue-300 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default-outlined:active {
-  @apply dark:bg-pacificBlue-950 dark:text-pacificBlue-300 dark:border-pacificBlue-300 text-pacificBlue-700 border-pacificBlue-700 bg-pacificBlue-100 rounded-md border-2;
+  @apply rounded-md border-2 border-pacificBlue-700 bg-pacificBlue-100 text-pacificBlue-700 dark:border-pacificBlue-300 dark:bg-pacificBlue-950 dark:text-pacificBlue-300;
 }
 
 .pacificBlue-default-gradient:active {
-  @apply dark:text-pacificBlue-950 dark:from-pacificBlue-400 dark:to-pacificBlue-600 from-pacificBlue-600 to-pacificBlue-800 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-pacificBlue-600 to-pacificBlue-800 text-zinc-50 dark:from-pacificBlue-400 dark:to-pacificBlue-600 dark:text-pacificBlue-950;
 }
 
 .pacificBlue-default:disabled {
-  @apply dark:bg-pacificBlue-800 dark:text-pacificBlue-100 bg-pacificBlue-200 text-pacificBlue-700;
+  @apply bg-pacificBlue-200 text-pacificBlue-700 dark:bg-pacificBlue-800 dark:text-pacificBlue-100;
 }
 
 .pacificBlue-default-outlined:disabled {
-  @apply dark:text-pacificBlue-300 dark:border-pacificBlue-300 text-pacificBlue-700 border-pacificBlue-700 rounded-md border-2;
+  @apply rounded-md border-2 border-pacificBlue-700 text-pacificBlue-700 dark:border-pacificBlue-300 dark:text-pacificBlue-300;
 }
 
 .pacificBlue-default-gradient:disabled {
-  @apply dark:text-pacificBlue-100 dark:from-pacificBlue-700 dark:to-pacificBlue-900 from-pacificBlue-100 to-pacificBlue-300 text-pacificBlue-700 bg-gradient-to-br;
+  @apply bg-gradient-to-br from-pacificBlue-100 to-pacificBlue-300 text-pacificBlue-700 dark:from-pacificBlue-700 dark:to-pacificBlue-900 dark:text-pacificBlue-100;
 }
 
 .cerulean-default {
-  @apply dark:bg-cerulean-400 dark:text-cerulean-950 bg-cerulean-500 text-zinc-50;
+  @apply bg-cerulean-500 text-zinc-50 dark:bg-cerulean-400 dark:text-cerulean-950;
 }
 
 .cerulean-default-outlined {
-  @apply dark:text-cerulean-300 dark:border-cerulean-300 text-cerulean-700 border-cerulean-700 rounded-md border-2;
+  @apply rounded-md border-2 border-cerulean-700 text-cerulean-700 dark:border-cerulean-300 dark:text-cerulean-300;
 }
 
 .cerulean-default-gradient {
-  @apply dark:text-cerulean-950 dark:from-cerulean-300 dark:to-cerulean-500 from-cerulean-400 to-cerulean-600 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-cerulean-400 to-cerulean-600 text-zinc-50 dark:from-cerulean-300 dark:to-cerulean-500 dark:text-cerulean-950;
 }
 
 .cerulean-default:hover {
-  @apply dark:bg-cerulean-300 dark:text-cerulean-950 bg-cerulean-600 text-zinc-50;
+  @apply bg-cerulean-600 text-zinc-50 dark:bg-cerulean-300 dark:text-cerulean-950;
 }
 
 .cerulean-default-outlined:hover {
-  @apply dark:bg-cerulean-950 dark:text-cerulean-300 dark:border-cerulean-300 text-cerulean-700 border-cerulean-700 bg-cerulean-50 rounded-md border-2;
+  @apply rounded-md border-2 border-cerulean-700 bg-cerulean-50 text-cerulean-700 dark:border-cerulean-300 dark:bg-cerulean-950 dark:text-cerulean-300;
 }
 
 .cerulean-default-gradient:hover {
-  @apply dark:text-cerulean-950 dark:from-cerulean-200 dark:to-cerulean-400 from-cerulean-500 to-cerulean-700 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-cerulean-500 to-cerulean-700 text-zinc-50 dark:from-cerulean-200 dark:to-cerulean-400 dark:text-cerulean-950;
 }
 
 .cerulean-default:active {
-  @apply dark:bg-cerulean-300 dark:text-cerulean-950 bg-cerulean-700 text-zinc-50;
+  @apply bg-cerulean-700 text-zinc-50 dark:bg-cerulean-300 dark:text-cerulean-950;
 }
 
 .cerulean-default-outlined:active {
-  @apply dark:bg-cerulean-950 dark:text-cerulean-300 dark:border-cerulean-300 text-cerulean-700 border-cerulean-700 bg-cerulean-100 rounded-md border-2;
+  @apply rounded-md border-2 border-cerulean-700 bg-cerulean-100 text-cerulean-700 dark:border-cerulean-300 dark:bg-cerulean-950 dark:text-cerulean-300;
 }
 
 .cerulean-default-gradient:active {
-  @apply dark:text-cerulean-950 dark:from-cerulean-400 dark:to-cerulean-600 from-cerulean-600 to-cerulean-800 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-cerulean-600 to-cerulean-800 text-zinc-50 dark:from-cerulean-400 dark:to-cerulean-600 dark:text-cerulean-950;
 }
 
 .cerulean-default:disabled {
-  @apply dark:bg-cerulean-800 dark:text-cerulean-100 bg-cerulean-200 text-cerulean-700;
+  @apply bg-cerulean-200 text-cerulean-700 dark:bg-cerulean-800 dark:text-cerulean-100;
 }
 
 .cerulean-default-outlined:disabled {
-  @apply dark:text-cerulean-300 dark:border-cerulean-300 text-cerulean-700 border-cerulean-700 rounded-md border-2;
+  @apply rounded-md border-2 border-cerulean-700 text-cerulean-700 dark:border-cerulean-300 dark:text-cerulean-300;
 }
 
 .cerulean-default-gradient:disabled {
-  @apply dark:text-cerulean-100 dark:from-cerulean-700 dark:to-cerulean-900 from-cerulean-100 to-cerulean-300 text-cerulean-700 bg-gradient-to-br;
+  @apply bg-gradient-to-br from-cerulean-100 to-cerulean-300 text-cerulean-700 dark:from-cerulean-700 dark:to-cerulean-900 dark:text-cerulean-100;
 }
 
 .neonCarrot-default {
-  @apply dark:bg-neonCarrot-400 dark:text-neonCarrot-950 bg-neonCarrot-500 text-zinc-50;
+  @apply bg-neonCarrot-500 text-zinc-50 dark:bg-neonCarrot-400 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default-outlined {
-  @apply dark:text-neonCarrot-300 dark:border-neonCarrot-300 text-neonCarrot-700 border-neonCarrot-700 rounded-md border-2;
+  @apply rounded-md border-2 border-neonCarrot-700 text-neonCarrot-700 dark:border-neonCarrot-300 dark:text-neonCarrot-300;
 }
 
 .neonCarrot-default-gradient {
-  @apply dark:text-neonCarrot-950 dark:from-neonCarrot-300 dark:to-neonCarrot-500 from-neonCarrot-400 to-neonCarrot-600 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-neonCarrot-400 to-neonCarrot-600 text-zinc-50 dark:from-neonCarrot-300 dark:to-neonCarrot-500 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default:hover {
-  @apply dark:bg-neonCarrot-300 dark:text-neonCarrot-950 bg-neonCarrot-600 text-zinc-50;
+  @apply bg-neonCarrot-600 text-zinc-50 dark:bg-neonCarrot-300 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default-outlined:hover {
-  @apply dark:bg-neonCarrot-950 dark:text-neonCarrot-300 dark:border-neonCarrot-300 text-neonCarrot-700 border-neonCarrot-700 bg-neonCarrot-50 rounded-md border-2;
+  @apply rounded-md border-2 border-neonCarrot-700 bg-neonCarrot-50 text-neonCarrot-700 dark:border-neonCarrot-300 dark:bg-neonCarrot-950 dark:text-neonCarrot-300;
 }
 
 .neonCarrot-default-gradient:hover {
-  @apply dark:text-neonCarrot-950 dark:from-neonCarrot-200 dark:to-neonCarrot-400 from-neonCarrot-500 to-neonCarrot-700 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-neonCarrot-500 to-neonCarrot-700 text-zinc-50 dark:from-neonCarrot-200 dark:to-neonCarrot-400 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default:active {
-  @apply dark:bg-neonCarrot-300 dark:text-neonCarrot-950 bg-neonCarrot-700 text-zinc-50;
+  @apply bg-neonCarrot-700 text-zinc-50 dark:bg-neonCarrot-300 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default-outlined:active {
-  @apply dark:bg-neonCarrot-950 dark:text-neonCarrot-300 dark:border-neonCarrot-300 text-neonCarrot-700 border-neonCarrot-700 bg-neonCarrot-100 rounded-md border-2;
+  @apply rounded-md border-2 border-neonCarrot-700 bg-neonCarrot-100 text-neonCarrot-700 dark:border-neonCarrot-300 dark:bg-neonCarrot-950 dark:text-neonCarrot-300;
 }
 
 .neonCarrot-default-gradient:active {
-  @apply dark:text-neonCarrot-950 dark:from-neonCarrot-400 dark:to-neonCarrot-600 from-neonCarrot-600 to-neonCarrot-800 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-neonCarrot-600 to-neonCarrot-800 text-zinc-50 dark:from-neonCarrot-400 dark:to-neonCarrot-600 dark:text-neonCarrot-950;
 }
 
 .neonCarrot-default:disabled {
-  @apply dark:bg-neonCarrot-800 dark:text-neonCarrot-100 bg-neonCarrot-200 text-neonCarrot-700;
+  @apply bg-neonCarrot-200 text-neonCarrot-700 dark:bg-neonCarrot-800 dark:text-neonCarrot-100;
 }
 
 .neonCarrot-default-outlined:disabled {
-  @apply dark:text-neonCarrot-300 dark:border-neonCarrot-300 text-neonCarrot-700 border-neonCarrot-700 rounded-md border-2;
+  @apply rounded-md border-2 border-neonCarrot-700 text-neonCarrot-700 dark:border-neonCarrot-300 dark:text-neonCarrot-300;
 }
 
 .neonCarrot-default-gradient:disabled {
-  @apply dark:text-neonCarrot-100 dark:from-neonCarrot-700 dark:to-neonCarrot-900 from-neonCarrot-100 to-neonCarrot-300 text-neonCarrot-700 bg-gradient-to-br;
+  @apply bg-gradient-to-br from-neonCarrot-100 to-neonCarrot-300 text-neonCarrot-700 dark:from-neonCarrot-700 dark:to-neonCarrot-900 dark:text-neonCarrot-100;
 }
 
 .regentBlue-default {
-  @apply dark:bg-regentBlue-400 dark:text-regentBlue-950 bg-regentBlue-500 text-zinc-50;
+  @apply bg-regentBlue-500 text-zinc-50 dark:bg-regentBlue-400 dark:text-regentBlue-950;
 }
 
 .regentBlue-default-outlined {
-  @apply dark:text-regentBlue-300 dark:border-regentBlue-300 text-regentBlue-700 border-regentBlue-700 rounded-md border-2;
+  @apply rounded-md border-2 border-regentBlue-700 text-regentBlue-700 dark:border-regentBlue-300 dark:text-regentBlue-300;
 }
 
 .regentBlue-default-gradient {
-  @apply dark:text-regentBlue-950 dark:from-regentBlue-300 dark:to-regentBlue-500 from-regentBlue-400 to-regentBlue-600 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-regentBlue-400 to-regentBlue-600 text-zinc-50 dark:from-regentBlue-300 dark:to-regentBlue-500 dark:text-regentBlue-950;
 }
 
 .regentBlue-default:hover {
-  @apply dark:bg-regentBlue-300 dark:text-regentBlue-950 bg-regentBlue-600 text-zinc-50;
+  @apply bg-regentBlue-600 text-zinc-50 dark:bg-regentBlue-300 dark:text-regentBlue-950;
 }
 
 .regentBlue-default-outlined:hover {
-  @apply dark:bg-regentBlue-950 dark:text-regentBlue-300 dark:border-regentBlue-300 text-regentBlue-700 border-regentBlue-700 bg-regentBlue-50 rounded-md border-2;
+  @apply rounded-md border-2 border-regentBlue-700 bg-regentBlue-50 text-regentBlue-700 dark:border-regentBlue-300 dark:bg-regentBlue-950 dark:text-regentBlue-300;
 }
 
 .regentBlue-default-gradient:hover {
-  @apply dark:text-regentBlue-950 dark:from-regentBlue-200 dark:to-regentBlue-400 from-regentBlue-500 to-regentBlue-700 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-regentBlue-500 to-regentBlue-700 text-zinc-50 dark:from-regentBlue-200 dark:to-regentBlue-400 dark:text-regentBlue-950;
 }
 
 .regentBlue-default:active {
-  @apply dark:bg-regentBlue-300 dark:text-regentBlue-950 bg-regentBlue-700 text-zinc-50;
+  @apply bg-regentBlue-700 text-zinc-50 dark:bg-regentBlue-300 dark:text-regentBlue-950;
 }
 
 .regentBlue-default-outlined:active {
-  @apply dark:bg-regentBlue-950 dark:text-regentBlue-300 dark:border-regentBlue-300 text-regentBlue-700 border-regentBlue-700 bg-regentBlue-100 rounded-md border-2;
+  @apply rounded-md border-2 border-regentBlue-700 bg-regentBlue-100 text-regentBlue-700 dark:border-regentBlue-300 dark:bg-regentBlue-950 dark:text-regentBlue-300;
 }
 
 .regentBlue-default-gradient:active {
-  @apply dark:text-regentBlue-950 dark:from-regentBlue-400 dark:to-regentBlue-600 from-regentBlue-600 to-regentBlue-800 bg-gradient-to-br text-zinc-50;
+  @apply bg-gradient-to-br from-regentBlue-600 to-regentBlue-800 text-zinc-50 dark:from-regentBlue-400 dark:to-regentBlue-600 dark:text-regentBlue-950;
 }
 
 .regentBlue-default:disabled {
-  @apply dark:bg-regentBlue-800 dark:text-regentBlue-100 bg-regentBlue-200 text-regentBlue-700;
+  @apply bg-regentBlue-200 text-regentBlue-700 dark:bg-regentBlue-800 dark:text-regentBlue-100;
 }
 
 .regentBlue-default-outlined:disabled {
-  @apply dark:text-regentBlue-300 dark:border-regentBlue-300 text-regentBlue-700 rounded-md border-2 border-rose-700;
+  @apply rounded-md border-2 border-rose-700 text-regentBlue-700 dark:border-regentBlue-300 dark:text-regentBlue-300;
 }
 
 .regentBlue-default-gradient:disabled {
-  @apply from-regentBlue-100 to-regentBlue-300 text-regentBlue-700 dark:from-regentBlue-700 dark:to-regentBlue-900 bg-gradient-to-br dark:text-rose-100;
+  @apply bg-gradient-to-br from-regentBlue-100 to-regentBlue-300 text-regentBlue-700 dark:from-regentBlue-700 dark:to-regentBlue-900 dark:text-rose-100;
 }
 
 .nav-link {
-  @apply flex h-[3rem] flex-grow  cursor-pointer justify-center gap-3  px-0 py-1.5 align-text-bottom text-lg text-zinc-950 dark:text-zinc-50;
+  @apply flex h-[3rem] w-44  cursor-pointer items-end justify-center gap-3 px-0 pb-4 text-sm text-zinc-950 dark:text-zinc-50;
 }
 
 .nav-link:hover {
-  @apply border-b-2 border-zinc-950 text-xl dark:border-zinc-50;
+  @apply border-b-2 border-zinc-950 pb-3.5 dark:border-zinc-50;
 }
 
 .nav-link-active {
-  @apply dark:text-neonCarrot-500 dark:border-neonCarrot-500 text-neonCarrot-700 border-neonCarrot-700 flex  h-[3rem] flex-grow cursor-pointer justify-center gap-3 border-b-2  px-0 py-1.5 text-lg;
+  @apply flex h-[3rem] w-44 cursor-pointer items-end justify-center gap-3 border-b-2 border-neonCarrot-700  px-0 pb-4 text-sm text-neonCarrot-700 dark:border-neonCarrot-500 dark:text-neonCarrot-500;
 }
