@@ -24,10 +24,8 @@ export default function RootLayout({
         className={`${inter.className} dynamic-theme ${switchThemeDuration}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main>
-            <Navbar />
-            {children}
-          </main>
+          <Navbar />
+          {children}
         </ThemeProvider>
       </body>
     </html>
