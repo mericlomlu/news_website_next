@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dynamic-theme {
-  @apply m-auto overflow-x-hidden border-zinc-900 bg-zinc-100 text-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100;
+  @apply font-negative m-auto overflow-x-hidden border-zinc-900 bg-zinc-100 text-zinc-900 dark:border-zinc-100 dark:bg-zinc-900 dark:text-zinc-100;
 }
 
 .scarlet-default {

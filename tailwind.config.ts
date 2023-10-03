@@ -114,7 +114,12 @@ const config: Config = {
         "950": "#263145",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+        negative: ["var(--font-signika-negative)"],
+      },
+    },
   },
   plugins: [],
 };

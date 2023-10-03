@@ -1,32 +1,41 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Signika_Negative } from "next/font/google";
 import React from "react";
-import { ThemeProvider } from "@/app/theme-provider";
 import Navbar from "@/components/Navbar";
+import StyledComponentsRegistry from "../../lib/AntdRegistry";
+import { ConfigProvider } from "antd";
+import theme from "../../theme/themeConfig";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const signika_negative = Signika_Negative({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-signika-negative",
+});
 
 export const metadata: Metadata = {
   title: "New Website Next",
   description: "Created by Meriç Lomlu",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  let switchThemeDuration = 1;
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dynamic-theme ${switchThemeDuration}`}
+        className={`${inter.className} ${signika_negative.className} dynamic-theme`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar />
-          {children}
-        </ThemeProvider>
+        <ConfigProvider theme={theme}>
+          <StyledComponentsRegistry>
+            <Navbar />
+            {children}
+          </StyledComponentsRegistry>
+        </ConfigProvider>
       </body>
     </html>
   );
