@@ -17,7 +17,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className="neonCarrot-default-gradient self-center rounded-md border-2 border-zinc-50 p-2 dark:border-neonCarrot-950 "
+      className="neonCarrot-default-gradient flex items-center justify-center self-center rounded-md border-2 border-zinc-50 p-2 dark:border-neonCarrot-950 max-[1280px]:h-9  max-[1280px]:w-9"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? <Sun /> : <Moon />}
