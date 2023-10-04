@@ -391,7 +391,7 @@
 }
 
 .nav-link {
-  @apply flex h-[3rem] w-44  cursor-pointer items-end justify-center gap-3 px-0 pb-4 text-sm text-zinc-950 dark:text-zinc-50;
+  @apply line-clamp-1 flex h-[3rem] w-10 cursor-pointer items-end justify-center gap-3 px-0 pb-3 text-sm text-zinc-950 dark:text-zinc-50 xl:w-44;
 }
 
 .nav-link:hover {
@@ -399,5 +399,5 @@
 }
 
 .nav-link-active {
-  @apply flex h-[3rem] w-44 cursor-pointer items-end justify-center gap-3 border-b-2 border-neonCarrot-700  px-0 pb-4 text-sm text-neonCarrot-700 dark:border-neonCarrot-500 dark:text-neonCarrot-500;
+  @apply line-clamp-1 flex h-[3rem] w-10 cursor-pointer items-end justify-center gap-3 border-b-2 border-neonCarrot-700  px-0 pb-3 text-sm text-neonCarrot-700 dark:border-neonCarrot-500 dark:text-neonCarrot-500 xl:w-44;
 }

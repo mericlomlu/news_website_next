@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Signika_Negative } from "next/font/google";
 import React from "react";
 import { ThemeProvider } from "@/app/theme-provider";
 import Navbar from "@/components/Navbar";
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   description: "Created by Meriç Lomlu",
 };
 
+const signika_negative = Signika_Negative({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-signika-negative",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dynamic-theme ${switchThemeDuration}`}
+        className={`${inter.className} ${signika_negative.className} dynamic-theme ${switchThemeDuration}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
