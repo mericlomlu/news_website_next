@@ -1,16 +1,14 @@
+"use client";
 import "./globals.css";
-import type { Metadata } from "next";
 import { Inter, Signika_Negative } from "next/font/google";
-import React from "react";
+import React, { Suspense } from "react";
 import { ThemeProvider } from "@/app/theme-provider";
 import Navbar from "@/components/Navbar";
+import { Provider } from "react-redux";
+import { store } from "@/redux/store/store";
+import Loading from "@/app/loading";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "New Website Next",
-  description: "Created by Meriç Lomlu",
-};
 
 const signika_negative = Signika_Negative({
   subsets: ["latin"],
@@ -29,10 +27,14 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${signika_negative.className} dynamic-theme ${switchThemeDuration}`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Navbar />
-          {children}
-        </ThemeProvider>
+        <Provider store={store}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Suspense fallback={<Loading />}>
+              <Navbar />
+              {children}
+            </Suspense>
+          </ThemeProvider>
+        </Provider>
       </body>
     </html>
   );
