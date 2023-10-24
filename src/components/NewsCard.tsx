@@ -49,10 +49,10 @@ export const NewsCard = (props: NewsCardProps) => {
           {props?.publishedAt || "11/04/1996"}
         </p>
       </div>
-      <p className="text-m px-4 text-center font-bold text-zinc-950">
+      <p className="text-m px-4 text-center font-bold text-zinc-950 line-clamp-1">
         {props?.title || "Test Başlığı"}
       </p>
-      <p className="line-clamp-3 px-4 text-left text-sm font-thin text-zinc-900">
+      <p className="line-clamp-3 px-4 text-center text-sm font-thin text-zinc-900">
         {props?.description || testDescription}
       </p>
       <div className="flex flex-row items-center justify-around w-full justify-self-end pt-4">

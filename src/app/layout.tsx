@@ -5,7 +5,7 @@ import React, { Suspense } from "react";
 import { ThemeProvider } from "@/app/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Provider } from "react-redux";
-import { store } from "@/redux/store/store";
+import { store } from "@/redux/store";
 import Loading from "@/app/loading";
 
 const inter = Inter({ subsets: ["latin"] });
