@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import topHeadlinesReducer from "./reducers/topHeadlinesReducer";
+import languageReducer from "./reducers/languageReducer";
 
 export const store = configureStore({
   reducer: {
     topHeadlines: topHeadlinesReducer,
+    language: languageReducer,
   },
 });
 

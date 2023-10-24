@@ -38,6 +38,6 @@ export const topHeadlinesSlice = createSlice({
 export const { setTopHeadlinesData } = topHeadlinesSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectMaxValues = (state: RootState) => state.topHeadlines;
+export const selectTopHeadlines = (state: RootState) => state.topHeadlines;
 
 export default topHeadlinesSlice.reducer;

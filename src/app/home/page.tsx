@@ -12,13 +12,19 @@ export default function Page() {
   const topHeadlinesData = useAppSelector(
     (state) => state.topHeadlines.topHeadlinesData,
   );
+  const language = useAppSelector((state) => state.language.language);
 
   useEffect(() => {
-    const config = setConfig("get", URLS.ENG.TOP_HEADLINES);
+    let config;
+    if (language === "TR") {
+      config = setConfig("get", URLS.TR.TOP_HEADLINES);
+    } else {
+      config = setConfig("get", URLS.ENG.TOP_HEADLINES);
+    }
     dispatch(fetchTopHeadlines(config));
-  }, []);
+  }, [language]);
   return (
-    <div className="flex min-h-[55rem] w-full flex-col items-center justify-center gap-4">
+    <div className="flex min-h-[55rem] w-full flex-col items-center justify-center gap-4 pt-16">
       <p>Home Page</p>
       {topHeadlinesData?.map((element: any) => (
         <NewsCard
