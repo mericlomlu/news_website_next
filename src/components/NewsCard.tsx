@@ -29,7 +29,7 @@ export const NewsCard = (props: NewsCardProps) => {
   };
 
   return (
-    <div className="flex h-96 w-72 flex-col items-center gap-2 rounded-xl border-4 border-neonCarrot-500">
+    <div className="flex-initial h-96 w-72 flex-col items-center gap-4 rounded-xl border-4 border-neonCarrot-500 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/6">
       <Image
         src={props?.imgUrl || something_went_wrong}
         width={284}
@@ -39,6 +39,7 @@ export const NewsCard = (props: NewsCardProps) => {
           objectFit: "contain",
           borderTopLeftRadius: 8,
           borderTopRightRadius: 8,
+          width: '100%'
         }}
       />
       <div className="flex flex-row justify-around self-stretch px-4">
@@ -60,7 +61,7 @@ export const NewsCard = (props: NewsCardProps) => {
           {props?.author || "Meriç Lomlu"}
         </p>
         <button
-          className="neonCarrot-default-gradient flex items-center justify-center self-center rounded-md border-2 border-zinc-50 p-2 dark:border-neonCarrot-950 max-[1280px]:h-10  max-[1280px]:w-20"
+          className="neonCarrot-default-gradient flex items-center justify-center self-center rounded-md border-2 border-zinc-50 p-2 dark:border-neonCarrot-950 max-[1280px]:h-10  max-[1280px]:w-20 justify-self-end"
           onClick={() => onClick()}
         >
           <a href={props?.url}>{buttonLabel}</a>

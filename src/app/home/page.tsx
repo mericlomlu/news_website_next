@@ -24,8 +24,7 @@ export default function Page() {
     dispatch(fetchTopHeadlines(config));
   }, [language]);
   return (
-    <div className="flex min-h-[55rem] w-full flex-col items-center justify-center gap-4 pt-16">
-      <p>Home Page</p>
+    <div className="flex min-h-[55rem] w-full flex-row items-center justify-center gap-12 pt-24 flex-wrap grow-0 pb-32">
       {topHeadlinesData?.map((element: any) => (
         <NewsCard
           title={element?.title}
