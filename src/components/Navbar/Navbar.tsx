@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+import { ThemeSwitcher } from "@/components/Navbar/ThemeSwitcher";
 import Image from "next/image";
-import Newspaper from "../../public/assets/newspaper.svg";
+import Newspaper from "../../../public/assets/newspaper.svg";
 import Link from "next/link";
 import {
   Activity,
@@ -13,12 +13,11 @@ import {
   SmartPhone,
   Thermometer,
   Tv,
-} from "../../public/constants/icons";
+} from "../../../public/constants/icons";
 import { usePathname } from "next/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useAppSelector } from "@/redux/hooks";
-import { constants } from "buffer";
-import { texts } from "../../public/constants/constants";
+import { texts } from "../../../public/constants/constants";
 
 const Navbar = () => {
   const pathName = usePathname();

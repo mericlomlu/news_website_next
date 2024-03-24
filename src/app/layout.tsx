@@ -3,7 +3,7 @@ import "./globals.css";
 import { Inter, Signika_Negative } from "next/font/google";
 import React, { Suspense } from "react";
 import { ThemeProvider } from "@/app/theme-provider";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
 import Loading from "@/app/loading";
