@@ -391,13 +391,17 @@
 }
 
 .nav-link {
-  @apply flex h-[3rem] cursor-pointer items-end justify-center gap-3 px-0 pb-3 text-sm text-zinc-950 dark:text-zinc-50;
+  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3 px-1 py-1 text-sm text-zinc-950 dark:text-zinc-50;
 }
 
 .nav-link:hover {
-  @apply border-b-2 border-zinc-950 pb-3.5 dark:border-zinc-50;
+  @apply border-b-2 border-zinc-950 text-base dark:border-zinc-50;
+}
+
+.nav-link-active:hover {
+  @apply border-b-2 border-neonCarrot-700 text-base dark:border-neonCarrot-500;
 }
 
 .nav-link-active {
-  @apply flex h-[3rem] cursor-pointer items-end justify-center gap-3 border-b-2 border-neonCarrot-700  px-0 pb-3 text-sm text-neonCarrot-700 dark:border-neonCarrot-500 dark:text-neonCarrot-500;
+  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3  px-1 py-1 text-sm text-neonCarrot-700 dark:text-neonCarrot-500;
 }
