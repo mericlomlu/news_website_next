@@ -19,12 +19,14 @@ export const fetchTopHeadlines = createAsyncThunk(
 type TopHeadlinesState = {
   topHeadlinesData: {}[];
   loading: boolean;
+  error: string;
 };
 
 // Define the initial state using that type
 const initialState: TopHeadlinesState = {
   topHeadlinesData: [],
   loading: false,
+  error: "",
 };
 
 export const topHeadlinesSlice = createSlice({
@@ -34,6 +36,9 @@ export const topHeadlinesSlice = createSlice({
   reducers: {
     setTopHeadlinesData: (state, action: PayloadAction<{}[]>) => {
       state.topHeadlinesData = action.payload;
+    },
+    resetTopHeadlinesData: (state) => {
+      state.topHeadlinesData = [];
     },
   },
   extraReducers(builder) {
@@ -52,12 +57,14 @@ export const topHeadlinesSlice = createSlice({
   },
 });
 
-export const { setTopHeadlinesData } = topHeadlinesSlice.actions;
+export const { setTopHeadlinesData, resetTopHeadlinesData } =
+  topHeadlinesSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
 export const selectTopHeadlines = (state: RootState) =>
   state.topHeadlines.topHeadlinesData;
 export const selectTopHeadlinesLoading = (state: RootState) =>
   state.topHeadlines.loading;
-
+export const selectTopHeadlinesError = (state: RootState) =>
+  state?.topHeadlines?.error;
 export default topHeadlinesSlice.reducer;

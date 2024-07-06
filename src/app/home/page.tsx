@@ -1,5 +1,4 @@
 "use client";
-import { URLS } from "../../../public/constants/api-urls";
 import React, { useEffect } from "react";
 import { NewsCard } from "@/components/NewsCard";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
@@ -10,6 +9,7 @@ import {
 } from "@/redux/reducers/topHeadlinesReducer";
 import { setConfig } from "../../../public/functions/functions";
 import { Loader } from "react-feather";
+import { URLS } from "@/redux/helpers/api-urls";
 
 export default function Page() {
   const dispatch = useAppDispatch();
@@ -24,7 +24,7 @@ export default function Page() {
     } else {
       config = setConfig("get", URLS.ENG.TOP_HEADLINES);
     }
-    dispatch(fetchTopHeadlines(config));
+    const response = dispatch(fetchTopHeadlines(config));
   }, [language]);
   return (
     <div className="flex min-h-[55rem] w-full grow-0 flex-row flex-wrap items-center justify-center gap-12 pb-32 pt-24">

@@ -391,11 +391,11 @@
 }
 
 .nav-link {
-  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3 px-1 py-1 text-sm text-zinc-950 dark:text-zinc-50;
+  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3 p-1 text-justify text-sm text-zinc-950 dark:text-zinc-50;
 }
 
 .nav-link:hover {
-  @apply border-b-2 border-zinc-950 text-base dark:border-zinc-50;
+  @apply border-b-2 border-zinc-950 text-base  dark:border-zinc-50;
 }
 
 .nav-link-active:hover {
@@ -403,5 +403,5 @@
 }
 
 .nav-link-active {
-  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3  px-1 py-1 text-sm text-neonCarrot-700 dark:text-neonCarrot-500;
+  @apply flex h-full w-full cursor-pointer items-center justify-center gap-3  p-1 text-justify text-sm text-neonCarrot-700 dark:text-neonCarrot-500;
 }

@@ -1,3 +1,14 @@
+import {
+  Activity,
+  BriefCase,
+  Dribbble,
+  HeadPhones,
+  Home,
+  SmartPhone,
+  Thermometer,
+  Tv,
+} from "./icons";
+
 export const texts = {
   TR: {
     TOP_HEADLINES: "Anasayfa",
@@ -20,3 +31,47 @@ export const texts = {
     TECHNOLOGY: "Technology News",
   },
 };
+
+export const turkish_nav_labels = [
+  "Anasayfa",
+  "İş Haberleri",
+  "Eğlence Haberleri",
+  "Genel Haberler",
+  "Sağlık Haberleri",
+  "Bilim Haberleri",
+  "Spor Haberleri",
+  "Teknoloji Haberleri",
+];
+
+export const english_nav_labels = [
+  "Home Page",
+  "Business News",
+  "Entertainment News",
+  "General News",
+  "Health News",
+  "Science News",
+  "Sports News",
+  "Technology News",
+];
+
+export const nav_href = [
+  "/home",
+  "/business",
+  "/entertainment",
+  "/general",
+  "/health",
+  "/science",
+  "/sports",
+  "/technology",
+];
+
+export const nav_icons = [
+  Home,
+  BriefCase,
+  HeadPhones,
+  Tv,
+  Activity,
+  Thermometer,
+  Dribbble,
+  SmartPhone,
+];
