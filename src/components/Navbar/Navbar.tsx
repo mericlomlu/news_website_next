@@ -28,14 +28,22 @@ const Navbar = () => {
   }, [language]);
 
   return (
-    <nav className="fixed top-0 flex max-h-[50px] min-h-[50px]  w-full gap-4 bg-regentBlue-400 px-4 dark:bg-regentBlue-700">
-      <Image priority src={Newspaper} alt="Newspaper" width={40} height={40} />
+    <nav className="fixed top-0 flex max-h-[50px] min-h-[50px] w-full  justify-center gap-4 bg-regentBlue-400 px-4 dark:bg-regentBlue-700">
+      <Image
+        priority
+        src={Newspaper}
+        alt="Newspaper"
+        width={0}
+        height={0}
+        className="h-[40px] w-auto self-center justify-self-center"
+      />
       {navLabels?.map((element: any, index: number) => (
         <NavbarLink
           pathName={pathName}
           index={index}
           label={element}
           href={navHrefs[index]}
+          key={index}
         />
       ))}
       <div className=" flex items-center justify-center gap-2 self-center">

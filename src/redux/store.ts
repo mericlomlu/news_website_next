@@ -3,6 +3,10 @@ import topHeadlinesReducer from "./reducers/topHeadlinesReducer";
 import languageReducer from "./reducers/languageReducer";
 
 export const store = configureStore({
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
   reducer: {
     topHeadlines: topHeadlinesReducer,
     language: languageReducer,

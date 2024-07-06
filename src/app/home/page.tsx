@@ -7,7 +7,7 @@ import {
   selectTopHeadlines,
   selectTopHeadlinesLoading,
 } from "@/redux/reducers/topHeadlinesReducer";
-import { setConfig } from "../../../public/functions/functions";
+import { convertDate, setConfig } from "../../../public/functions/functions";
 import { Loader } from "react-feather";
 import { URLS } from "@/redux/helpers/api-urls";
 
@@ -29,17 +29,21 @@ export default function Page() {
   return (
     <div className="flex min-h-[55rem] w-full grow-0 flex-row flex-wrap items-center justify-center gap-12 pb-32 pt-24">
       {loading && <Loader />}
-      {topHeadlinesData?.map((element: any) => (
-        <NewsCard
-          title={element?.title}
-          description={element?.description}
-          url={element?.url}
-          imgUrl={element?.urlToImage}
-          publishedAt={element?.publishedAt}
-          sourceName={element?.source?.name}
-          author={element?.author}
-        />
-      ))}
+      {topHeadlinesData?.map(
+        (element: any, index: number) =>
+          element?.title !== "[Removed]" && (
+            <NewsCard
+              title={element?.title}
+              description={element?.description}
+              url={element?.url}
+              imgUrl={element?.urlToImage}
+              publishedAt={convertDate(element?.publishedAt)}
+              sourceName={element?.source?.name}
+              author={element?.author}
+              key={index}
+            />
+          ),
+      )}
     </div>
   );
 }

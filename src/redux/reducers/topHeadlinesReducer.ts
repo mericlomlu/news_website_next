@@ -2,6 +2,31 @@ import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import type { RootState } from "./../store";
 import axios, { AxiosError } from "axios";
 
+// Define a type for the slice state
+type TopHeadlinesState = {
+  topHeadlinesData: Article[];
+  loading: boolean;
+  error: string;
+};
+
+// Define the initial state using that type
+const initialState: TopHeadlinesState = {
+  topHeadlinesData: [],
+  loading: false,
+  error: "",
+};
+
+type Article = {
+  author: string;
+  content: string;
+  description: string;
+  publishedAt: string;
+  source: { id: null; name: string };
+  title: string;
+  url: string;
+  urlToImage: string;
+};
+
 export const fetchTopHeadlines = createAsyncThunk(
   "fetchTopHeadlines",
   async (config: { method: string; url: string }, { rejectWithValue }) => {
@@ -15,26 +40,12 @@ export const fetchTopHeadlines = createAsyncThunk(
   },
 );
 
-// Define a type for the slice state
-type TopHeadlinesState = {
-  topHeadlinesData: {}[];
-  loading: boolean;
-  error: string;
-};
-
-// Define the initial state using that type
-const initialState: TopHeadlinesState = {
-  topHeadlinesData: [],
-  loading: false,
-  error: "",
-};
-
 export const topHeadlinesSlice = createSlice({
   name: "topHeadlinesSlice",
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-    setTopHeadlinesData: (state, action: PayloadAction<{}[]>) => {
+    setTopHeadlinesData: (state, action: PayloadAction<Article[]>) => {
       state.topHeadlinesData = action.payload;
     },
     resetTopHeadlinesData: (state) => {
@@ -46,7 +57,6 @@ export const topHeadlinesSlice = createSlice({
       state.loading = true;
     });
     builder.addCase(fetchTopHeadlines.fulfilled, (state, action) => {
-      console.log(action.payload);
       state.topHeadlinesData = action.payload.data.articles;
       state.loading = false;
     });
