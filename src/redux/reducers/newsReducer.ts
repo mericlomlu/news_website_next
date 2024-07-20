@@ -15,14 +15,14 @@ const initialState: NewsState = {
 };
 
 type Article = {
-  author: string;
-  content: string;
-  description: string;
-  publishedAt: string;
-  source: { id: null; name: string };
-  title: string;
-  url: string;
-  urlToImage: string;
+  author: string | null;
+  content: string | null;
+  description: string | null;
+  publishedAt: string | null;
+  source: { id: string | null; name: string | null };
+  title: string | null;
+  url: string | null;
+  urlToImage: string | null;
 };
 
 export const fetchNews = createAsyncThunk(
