@@ -24,6 +24,6 @@ export const languageSlice = createSlice({
 export const { setLanguage } = languageSlice.actions;
 
 // Other code such as selectors can use the imported `RootState` type
-export const selectLanguage = (state: RootState) => state.language;
+export const selectLanguage = (state: RootState) => state.language.language;
 
 export default languageSlice.reducer;

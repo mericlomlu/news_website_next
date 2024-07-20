@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import topHeadlinesReducer from "./reducers/topHeadlinesReducer";
 import languageReducer from "./reducers/languageReducer";
+import newsReducer from "./reducers/newsReducer";
 
 export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
@@ -8,8 +8,8 @@ export const store = configureStore({
       serializableCheck: false,
     }),
   reducer: {
-    topHeadlines: topHeadlinesReducer,
     language: languageReducer,
+    news: newsReducer,
   },
 });
 

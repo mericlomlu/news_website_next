@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { SOMETHING_WENT_WRONG } from "@public/constants/constants";
 
-const testDescription =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra." +
-  "Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.";
-
 type NewsCardProps = {
   title?: string;
   description?: string;
@@ -41,18 +37,18 @@ export const NewsCard = (props: NewsCardProps) => {
       <div className="flex h-2/5 w-full flex-col gap-4 px-4 pt-2">
         <div className="flex flex-row justify-between self-stretch ">
           <p className="line-clamp-1 text-left text-sm font-thin text-zinc-900">
-            {props?.sourceName || "Google"}
+            {props?.sourceName || "Hata"}
           </p>
           <p className="line-clamp-1 text-right text-sm font-thin text-zinc-900">
-            {props?.publishedAt || "11/04/1996"}
+            {props?.publishedAt || "00/00/0000"}
           </p>
         </div>
         <div className="flex w-full flex-col gap-2">
           <p className="text-m line-clamp-1  text-left font-bold text-zinc-950">
-            {props?.title || "Test Başlığı"}
+            {props?.title || "Hata"}
           </p>
           <p className="line-clamp-3  text-left text-sm font-thin text-zinc-900">
-            {props?.description || testDescription}
+            {props?.description || "Hata"}
           </p>
         </div>
       </div>
@@ -60,7 +56,7 @@ export const NewsCard = (props: NewsCardProps) => {
         <p className="... line-clamp-1 flex-1 overflow-hidden text-clip text-left text-sm font-thin text-zinc-900">
           {props?.author?.startsWith("http")
             ? props?.sourceName
-            : props?.author || props.sourceName}
+            : props?.author || props.sourceName || "Hata"}
         </p>
         {isClicked ? (
           <button
