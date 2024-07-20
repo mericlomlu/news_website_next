@@ -8,6 +8,7 @@ import {
   Thermometer,
   Tv,
 } from "./icons";
+import something_went_wrong from "../assets/something_went_wrong.svg";
 
 export const texts = {
   TR: {
@@ -75,3 +76,5 @@ export const nav_icons = [
   Dribbble,
   SmartPhone,
 ];
+
+export const SOMETHING_WENT_WRONG = something_went_wrong;

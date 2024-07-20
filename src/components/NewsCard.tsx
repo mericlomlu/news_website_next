@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import something_went_wrong from "../../public/assets/something_went_wrong.svg";
+import { SOMETHING_WENT_WRONG } from "@public/constants/constants";
 
 const testDescription =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra." +
@@ -30,7 +30,7 @@ export const NewsCard = (props: NewsCardProps) => {
     <div className="neonCarrot-default-gradient flex h-96 w-72 min-w-[14rem] basis-1/2 flex-col items-center justify-between gap-2 rounded-xl border-4 border-neonCarrot-500 md:basis-1/3 lg:basis-1/4 xl:basis-1/6">
       <div className="flex h-2/5 w-full p-1">
         <Image
-          src={props?.imgUrl || something_went_wrong}
+          src={props?.imgUrl || SOMETHING_WENT_WRONG}
           priority
           width={284}
           height={158}

@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [language]);
 
   return (
-    <nav className="fixed top-0 flex max-h-[50px] min-h-[50px] w-full  justify-center gap-4 bg-regentBlue-400 px-4 dark:bg-regentBlue-700">
+    <nav className="fixed top-0 z-50 flex max-h-[50px] min-h-[50px]  w-full justify-center gap-4 bg-regentBlue-400 px-4 dark:bg-regentBlue-700">
       <Image
         priority
         src={Newspaper}

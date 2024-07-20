@@ -4,14 +4,14 @@ import axios, { AxiosError } from "axios";
 
 // Define a type for the slice state
 type TopHeadlinesState = {
-  topHeadlinesData: Article[];
+  topHeadlinesData: Article[] | null;
   loading: boolean;
   error: string;
 };
 
 // Define the initial state using that type
 const initialState: TopHeadlinesState = {
-  topHeadlinesData: [],
+  topHeadlinesData: null,
   loading: false,
   error: "",
 };
@@ -49,7 +49,7 @@ export const topHeadlinesSlice = createSlice({
       state.topHeadlinesData = action.payload;
     },
     resetTopHeadlinesData: (state) => {
-      state.topHeadlinesData = [];
+      state.topHeadlinesData = null;
     },
   },
   extraReducers(builder) {
@@ -61,7 +61,7 @@ export const topHeadlinesSlice = createSlice({
       state.loading = false;
     });
     builder.addCase(fetchTopHeadlines.rejected, (state) => {
-      state.topHeadlinesData = [];
+      state.topHeadlinesData = null;
       state.loading = false;
     });
   },
