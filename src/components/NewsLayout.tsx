@@ -5,16 +5,16 @@ import { convertDate } from "@public/functions/functions";
 import { Loader } from "react-feather";
 import { SOMETHING_WENT_WRONG } from "@public/constants/constants";
 
-interface Article {
-  author: string;
-  content: string;
-  description: string;
-  publishedAt: string;
-  source: { id: null; name: string };
-  title: string;
-  url: string;
-  urlToImage: string;
-}
+type Article = {
+  author: string | null;
+  content: string | null;
+  description: string | null;
+  publishedAt: string | null;
+  source: { id: string | null; name: string | null };
+  title: string | null;
+  url: string | null;
+  urlToImage: string | null;
+};
 
 interface NewsLayoutProps {
   newsData: Article[] | null;
