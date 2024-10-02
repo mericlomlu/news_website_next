@@ -10,8 +10,7 @@ export const setConfig = (method: string, url: string) => {
 };
 
 export const returnNavIcons = (index: number) => {
-  const icon = React?.createElement(nav_icons[index], { width: 20 });
-  return icon;
+  return React?.createElement(nav_icons[index], { width: 20 });
 };
 
 export const convertDate = (dateStr: string) => {

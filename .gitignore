@@ -33,3 +33,5 @@ yarn-error.log*
 # typescript
 themeConfig.tsbuildinfo
 next-env.d.ts
+
+yarn.lock
